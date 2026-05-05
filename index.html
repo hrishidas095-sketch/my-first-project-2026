@@ -11,44 +11,27 @@
       background: #f4f4f4;
     }
 
-    /* NAVBAR */
-    nav {
-      background: #111;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #00bcd4;
-    }
-
-    /* HEADER */
     header {
       background: linear-gradient(to right, #4facfe, #00f2fe);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px;
     }
 
-    /* SECTION BOX */
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 10px;
+      border: 3px solid white;
+    }
+
     section {
       background: white;
       margin: 20px;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    section:hover {
-      transform: scale(1.02);
     }
 
     h2 {
@@ -56,19 +39,18 @@
       padding-bottom: 5px;
     }
 
-    /* BUTTON */
+    ul {
+      padding-left: 20px;
+    }
+
     .btn {
       display: inline-block;
       padding: 10px 15px;
       background: #4facfe;
       color: white;
-      border-radius: 5px;
       text-decoration: none;
+      border-radius: 5px;
       margin-top: 10px;
-    }
-
-    .btn:hover {
-      background: #00c6ff;
     }
 
     footer {
@@ -76,36 +58,32 @@
       padding: 15px;
       background: #111;
       color: white;
-      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <!-- HEADER -->
   <header>
     <h1>Hrishi Das</h1>
     <p>Aspiring Web Developer 🚀</p>
+
+    <!-- 👇 PASTE YOUR IMAGE LINK HERE -->
+    <img src="PASTE_IMAGE_LINK_HERE" alt="My Photo">
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section>
     <h2>About Me</h2>
-    <p>I am learning web development and building real-world projects using HTML, CSS, and GitHub.</p>
+    <p>
+      I am learning web development and building real-world projects using HTML, CSS, and GitHub.
+      This is my first live portfolio website.
+    </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section>
     <h2>Skills</h2>
     <ul>
       <li>HTML</li>
@@ -115,19 +93,19 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section>
     <h2>Projects</h2>
     <p>My First Website (Live Project)</p>
-    
-    <a href="https://hrishidas095-sketch.github.io/my-first-project-2026/" class="btn" target="_blank">
+
+    <a href="https://hrishidas095-sketch.github.io/my-first-project-2026/" target="_blank" class="btn">
       View Live Project
     </a>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section>
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@email.com">hrishidas095@gmail.com</a></p>
+    <p>Email: <a href="mailto:hrishidas095@gmail.com">hrishidas095@gmail.com</a></p>
   </section>
 
   <!-- FOOTER -->
