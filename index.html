@@ -2,41 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hrishi Das | Portfolio</title>
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
     }
 
-    header {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f172a;
+      color: #fff;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      padding: 15px;
       text-align: center;
-      padding: 30px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #3b82f6, #06b6d4);
     }
 
     header img {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
-      margin-top: 10px;
-      border: 3px solid white;
+      margin-top: 15px;
+      border: 4px solid white;
     }
 
+    header h1 {
+      margin-top: 10px;
+      font-size: 32px;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    /* SECTIONS */
     section {
-      background: white;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+      margin-bottom: 15px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     ul {
@@ -45,72 +99,95 @@
 
     .btn {
       display: inline-block;
+      margin-top: 10px;
       padding: 10px 15px;
-      background: #4facfe;
-      color: white;
+      background: #38bdf8;
+      color: black;
       text-decoration: none;
       border-radius: 5px;
-      margin-top: 10px;
+      font-weight: bold;
     }
 
+    /* FOOTER */
     footer {
       text-align: center;
-      padding: 15px;
-      background: #111;
-      color: white;
+      padding: 20px;
+      background: #020617;
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <!-- HEADER -->
   <header>
     <h1>Hrishi Das</h1>
     <p>Aspiring Web Developer 🚀</p>
 
-    <!-- 👇 PASTE YOUR IMAGE LINK HERE -->
-    <img src="https://github.com/hrishidas095-sketch/my-first-project-2026/blob/main/IMG-20260504-WA0029.jpg?raw=true" alt="My Photo">
+    <!-- 👉 PUT YOUR IMAGE LINK HERE -->
+    <img src="PASTE_IMAGE_LINK_HERE" alt="Profile Photo">
   </header>
 
   <!-- ABOUT -->
-  <section>
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      I am learning web development and building real-world projects using HTML, CSS, and GitHub.
-      This is my first live portfolio website.
-    </p>
+    <div class="card">
+      <p>
+        I am learning web development and building real-world projects using HTML, CSS, and GitHub.
+        This is my live portfolio website and I aim to become a professional developer.
+      </p>
+    </div>
   </section>
 
   <!-- SKILLS -->
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS (Learning)</li>
-      <li>Git & GitHub</li>
-    </ul>
+    <div class="card">
+      <ul>
+        <li>HTML</li>
+        <li>CSS (Learning)</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
   </section>
 
   <!-- PROJECTS -->
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
-    <p>My First Website (Live Project)</p>
 
-    <a href="https://hrishidas095-sketch.github.io/my-first-project-2026/" target="_blank" class="btn">
-      View Live Project
-    </a>
+    <div class="card">
+      <h3>My First Website</h3>
+      <p>My first live project hosted using GitHub Pages.</p>
+
+      <a href="https://hrishidas095-sketch.github.io/my-first-project-2026/" target="_blank" class="btn">
+        View Live Project
+      </a>
+    </div>
+
   </section>
 
   <!-- CONTACT -->
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hrishidas095@gmail.com">hrishidas095@gmail.com</a></p>
+    <div class="card">
+      <p>Email: <a href="mailto:hrishidas095@gmail.com" style="color:#38bdf8;">
+        hrishidas095@gmail.com
+      </a></p>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Hrishi Das</p>
+    <p>© 2026 Hrishi Das | All Rights Reserved</p>
   </footer>
 
 </body>
